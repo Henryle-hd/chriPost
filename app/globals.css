@@ -2,26 +2,250 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+  background-color: black;
+  color: aliceblue;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.title{
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #dadff7;
+}
+.colored{ 
+    color: #45a049;
+    font-size: 1.3em;
+}
+.navMain{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #262934;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+ul{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  text-decoration: none;
+}
+.link-container{ 
+  display: flex;
+  justify-content: space-between;
+}
+.link{
+  margin: 10px ;
+  color: #dadff7;
+  font-weight: bold;
+  font-size: 1.5em;
+  transition: color 0.3s ease-in-out;
+  text-transform: capitalize;
+  font-family: 'Arial', sans-serif;
+}
+.link:hover{
+ text-decoration: underline;
+ transition: all 0.8s ease;
+}
+.footer{ 
+    /* background-color: #202229; */
+    position: relative;
+    bottom: 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em 0;
+}
+.pathName{ 
+  text-align: center;
+  color: #45a049;
+}
+.chriPosts{ 
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  overflow: scroll;
+  
+}
+.post{
+  border: 1px solid #202229;
+  max-height: 79vh;
+  width: 70%;
+  padding: 20px;
+}
+.postTitle{
+  color: #2961BA;
+}
+.postBody p{
+  color: #dadff7bf;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+
+
+ 
+
+
+/* AboutUs  */
+.AboutUsMain{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.imageContainer{
+  width: 20em ;
+  height: 20em;
+  border-radius:50% ;
+  overflow: hidden;
+  position: relative;
+}
+.imageContainer Image{
+  width: 100%;
+  
+}
+.AboutUsMain p{
+  width: 40%;
+  margin-top: 0.5em;
+  text-align: center;
+  line-height: 2em;
+}
+.AboutUsMain P .imoge{
+  font-size: 2em;
+}
+
+
+/* //contact page   */
+
+.contantPageMain{
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagesContainer{
+  display: flex;
+  gap: 0.5em;
+}
+.imageBox{
+  width: 150px;
+  height: 150px;
+  background-color: #dadff7;
+  border-radius: 0.5em;
+  border: 1px solid #202229;
+  padding: 0.5em;
+}
+.imageBox:hover{
+  background-color: #45a049;
+  transition: all 0.4s ease;
+  
+}
+.iconChri{
+  font-size: 6em;
+  position: relative;
+  transition: font-size 0.3s ease;
+}
+/* otheruseersPage  */
+
+.otherUsersContainer{ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  margin-bottom: 20em;
+  
+}
+.userBox{
+  width: 150px;
+  height: 150px;
+  background-color: #45a049;
+  border-radius: 50%;
+  border: 1px solid #202229;
+  padding: 0.5em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.userBox:hover{
+  background-color: #dadff7;
+  transition: all 0.4s ease;
+}
+
+/* add userPage  */
+.addPostMain{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.inputBox{ 
+  width: 60%;
+  max-width: 300px;
+}
+input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 1em;
+    outline: none;
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding-left: 1em;
+    border: 1px solid #0000002a;
+    background-color:  #dadff790;
+    color: #ffffff;
+    margin-top: 0.5em;
+}
+
+button {
+    background-color: #2961BA;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 4px;
+    
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+textarea {
+    width: 100%;
+    height: 25vh;
+    /* padding: 8px; */
+    box-sizing: border-box;
+    resize: none;
+    overflow: scroll;
+    font-size: 1em;
+    outline: none;
+    border-radius: 0.5em;
+    border: 1px solid #0000002a;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    background-color: #333;
+    color: #9ac6ff;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0.5em;
+
 }
