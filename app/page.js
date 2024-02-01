@@ -21,7 +21,7 @@ useEffect(() => {
     <div className="chriPosts">
       <head>
         <title>🏡homepage</title>
-        <meta name="description" content="This welcoming page"></meta>
+        <meta name="description" content="welcoming to chris-post"></meta>
       </head>
       <ChriIcon />      
       {users.map(user => (
