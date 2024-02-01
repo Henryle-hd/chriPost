@@ -25,6 +25,7 @@ useEffect(() => {
       </head>
       <ChriIcon />      
       {users.map(user => (
+        <>
         <div className="post">
              <div className="postTitle">
             <h3 className="posterName"><Link href='/users/Henry' className="colored">{user.name}{ user.icon}</Link> </h3>
@@ -37,7 +38,8 @@ useEffect(() => {
             <p>{ user.post}</p>
           </div>
 
-        </div>
+          </div>
+          </>
       ))}
 
       </div>

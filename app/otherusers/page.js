@@ -16,17 +16,19 @@ const Otherusers = () => {
 
 
   return (
-      <div className="otherUsersContainer">
+    <div className="otherUsersContainer">
       {users?.map((user) => (
-        
-           <Link href='/users/Henry' >
-          <div className="userBox">
-            <h2 className="text-center iconChri">{ user.icon}</h2> 
-            <span className="colored">{ user.name}</span>
-              </div>
-              </Link>        
+        <>
+          <Link href='/users/Henry' >
+            <div className="userBox">
+              <h2 className="text-center iconChri">{user.icon}</h2>
+              <span className="colored">{user.name}</span>
+            </div>
+          </Link>
+        </>
       ))}
-    </div>
+    </div >
+        
   )
 }
 
