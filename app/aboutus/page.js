@@ -10,7 +10,7 @@ const Aboutus = () => {
       <p>
        <span className="imoge">😋</span> 
         <br/>
-        Additionally, a community forum will be implemented to allow students to interact and provide help, answers, and solutions to each other's problems. The project will also provide instructions and guidance on using different CBE systems, admission servers, library resources, CBESO (Business Education Students Organization), financial services, and other departments.</p>
+        Additionally, a community forum will be implemented to allow students to interact and provide help, answers, and solutions to each others problems. The project will also provide instructions and guidance on using different CBE systems, admission servers, library resources, CBESO (Business Education Students Organization), financial services, and other departments.</p>
     </div>
   )
 }

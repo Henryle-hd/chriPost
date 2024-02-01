@@ -1,6 +1,6 @@
 'use client'
-import { redirect } from "next/navigation";
-import { useRouter } from "next/router";
+// import { redirect } from "next/navigation";
+// import { useRouter } from "next/router";
 import { useState } from "react";
 
 const CreatePost = () => {
