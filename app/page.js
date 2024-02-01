@@ -1,5 +1,5 @@
 'use client';
-import { head } from "next/document";
+import { Head } from "next/head"
 import { useEffect, useState } from "react";
 import ChriIcon from "./components/chriicon";
 import Link from 'next/link';
@@ -19,10 +19,12 @@ useEffect(() => {
 
   return (
     <div className="chriPosts">
-      <head>
+      <>
+      <Head>
         <title>🏡homepage</title>
-        <meta name="description" content="welcoming to chris-post"></meta>
-      </head>
+        <meta name="description" content="This welcoming page"></meta>
+        </Head>
+        </>
       <ChriIcon />      
       {users.map(user => (
         <>
